@@ -96,9 +96,7 @@ main :first-child {
 	margin-top: 0;
 }
 
-header {
-	border-bottom: 1px dashed var(--color-gray-20);
-}
+
 header:after {
 	content: "";
 	display: table;
@@ -193,7 +191,7 @@ header {
 .postlist-item:before {
 	display: inline-block;
 	pointer-events: none;
-	content: "" counter(start-from, decimal-leading-zero) ". ";
+	content: "" counter(start-from) " ";
 	line-height: 100%;
 	text-align: right;
 	margin-left: -1.5rem;
